@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
 const fs = require("fs");
+const cors = require("cors");
+app.use(cors());
 // const solr = require("solr-client");
 const solrNode = require("solr-node");
 // const client = solr.createClient();
