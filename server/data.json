@@ -1,0 +1,68 @@
+{
+  "data": [
+    {
+      "title": "Top-View Noise-Filtered Point Cloud of 2-wheelers, 4-wheelers and Pedestrians",
+      "description": "Various modes of transportation traverse our roadways, highlighting the importance of object classification for improving traffic safety. Optical sensors that rely on visual data encounter challenges in adverse weather conditions, where poor visibility hinders target classification. In this project we use an off-the-shelf millimeter wave Frequency Modulated Continuous Wave (FMCW) radar -- Texas Instruments IWR1843BOOST module to classify on road objects. By combining the radar module, Robot Operating System (ROS), and Python scripts, we extracted a dataset of 3D point cloud images. The images were preprocessed to create top-view noise-filtered images, and using Machine Learning (ML) models, they were classified into 2-wheelers, 4-wheelers, and pedestrians. The ML model was trained on a dataset comprising approximately 15,000 images. This dataset is now shared with the community through IHUB data. For more details please contact: 1. Dr. Abhishek Srivastava (PI): abhishek.srivastava@iiit.ac.in 2. Dr. Ravi Kiran (Co-PI): ravi.kiran@iiit.ac.in 3. Pranjal Mahajan: pranjal.mahajan@research.iiit.ac.in 4. Srayan Sankar Chatterjee: srayan.chatterjee@research.iiit.ac.in Acknowledgements: The authors would like to thank IHUB data for funding this research."
+    },
+    {
+      "title": "City Scale Road Audit Dataset",
+      "description": "Road networks in cities are massive and is a critical component of mobility. Fast response to defects, that can occur not only due to regular wear and tear but also because of extreme events like storms, is essential. Hence there is a need for an automated system that is quick, scalable and cost- effective for gathering information about defects. We propose a system for city-scale road audit, using some of the most recent developments in deep learning and semantic segmentation. For building and benchmarking the system, we curated a dataset which has annotations required for road defects. However, many of the labels required for road audit have high ambiguity which we overcome by proposing a label hierarchy. We also propose a multi-step deep learning model that segments the road, subdivide the road further into defects, tags the frame for each defect and finally localizes the defects on a map gathered using GPS. We analyze and evaluate the models on image tagging as well as segmentation at different levels of the label hierarchy."
+    },
+    {
+      "title": "PLAS-5K",
+      "description": "Accurate prediction of binding affinities between a small molecule and target proteins still remains to be a major challenge. The use of Artificial Intelligence (AI) models have been proposed as an alternative to traditional physics based scoring functions. Despite many advances in machine learning (ML) models over affinity prediction, they have mainly relied on feature engineering from static 3-Dimensional that often mask the dynamic features of protein-ligand interactions. To this end, we have curated MD-based datasets that provides protein-ligand affinities along with non-covalent interaction components for machine learning applications. Models built over these datasets can help to capture the dynamic binding modes by considering various geometric charactresitcs of the interaction. PLAS-5k comprises of 5000 protein-ligand complexes chosen from PDB database. The dataset consists of binding affinities along with energy components like electrostatic, van der Waals, polar and non-polar solvation energy calculated from molecular dynamics simulations using MMPBSA (Molecular Mechanics Poisson-Boltzmann Surface Area) method. The initial structures of all the 5000 protein ligand complexes are available in PDB format and the csv file containing information about binding affinity. This work is published in Scientific Data (https://doi.org/10.1038/s41597-022-01631-9)"
+    },
+    {
+      "title": "PLAS-5K Variation 2",
+      "description": "Accurate prediction of binding affinities between a small molecule and target proteins still remains to be a major challenge. The use of Artificial Intelligence (AI) models have been proposed as an alternative to traditional physics based scoring functions. Despite many advances in machine learning (ML) models over affinity prediction, they have mainly relied on feature engineering from static 3-Dimensional that often mask the dynamic features of protein-ligand interactions. To this end, we have curated MD-based datasets that provides protein-ligand affinities along with non-covalent interaction components for machine learning applications. Models built over these datasets can help to capture the dynamic binding modes by considering various geometric charactresitcs of the interaction. PLAS-5k comprises of 5000 protein-ligand complexes chosen from PDB database. The dataset consists of binding affinities along with energy components like electrostatic, van der Waals, polar and non-polar solvation energy calculated from molecular dynamics simulations using MMPBSA (Molecular Mechanics Poisson-Boltzmann Surface Area) method. The initial structures of all the 5000 protein ligand complexes are available in PDB format and the csv file containing information about binding affinity. This work is published in Scientific Data (https://doi.org/10.1038/s41597-022-01631-9)"
+    },
+    {
+      "title": "APO-Bind",
+      "description": "A dataset ligand unbound protein conformations for Machine Learning Applications in De Novo Drug Design. Ligand-free protein structure equivalents for 10,599 out of 16,608 protein-ligand complexes were obtained in the PDBbind v.2019 database with the purpose of enabling computation and large-scale validation of structure-based drug design methods on apo structures. This was done by mining the PDB database for apo protein structures with high sequence and structural alignment with proteins present in PDBbind"
+    },
+    {
+      "title": "PLAS-5K Variation 3",
+      "description": "Accurate prediction of binding affinities between a small molecule and target proteins still remains to be a major challenge. The use of Artificial Intelligence (AI) models have been proposed as an alternative to traditional physics based scoring functions. Despite many advances in machine learning (ML) models over affinity prediction, they have mainly relied on feature engineering from static 3-Dimensional that often mask the dynamic features of protein-ligand interactions. To this end, we have curated MD-based datasets that provides protein-ligand affinities along with non-covalent interaction components for machine learning applications. Models built over these datasets can help to capture the dynamic binding modes by considering various geometric charactresitcs of the interaction. PLAS-5k comprises of 5000 protein-ligand complexes chosen from PDB database. The dataset consists of binding affinities along with energy components like electrostatic, van der Waals, polar and non-polar solvation energy calculated from molecular dynamics simulations using MMPBSA (Molecular Mechanics Poisson-Boltzmann Surface Area) method. The initial structures of all the 5000 protein ligand complexes are available in PDB format and the csv file containing information about binding affinity. This work is published in Scientific Data (https://doi.org/10.1038/s41597-022-01631-9)"
+    },
+    {
+      "title": "IDD Segmentation- Part 2",
+      "description": "Segmentation of sub-cortical structures from MRI scans is of interest in many neurological diagnoses. Indian Brain Segmentation Dataset (IBSD) consists of high-quality 1.5T T1w MRI data of 114 subjects generated under fixed imaging protocol along with corresponding manual annotation data of 14 sub-cortical structures done by expert radiologists. The number of MR scans in the dataset consists of an approximately equal number of male and female subjects belonging to a young age group (20-30 years). This data has been used to create a template for the young Indian population. This dataset can also be utilized for variety of tasks such as segmenting structures of interest, aligning/ registering images, etc, using traditional methods as well as Deep Learning approaches since it has adequate quantity of high quality data. Focus Area : Neuro and Mental Health"
+    },
+    {
+      "title": "INAI Challenge Dataset",
+      "description": "Drivers of ADAS-fitted buses receive real-time safety alerts. AI-powered Advanced Driver Assistance Systems (ADAS) continuously monitors the road ahead and warns the driver a few seconds before a potential collision. ADAS Safety alerts and warnings to driver are given below: 1. Forward Collision Warning (FCW) 2. Pedestrian Collision Warning (PCW) 3. Headway Monitoring and Warning (HMW) 4. Lane Departure Warning (LDW) ADAS alerts provide real-time warnings and quick feedback to drivers. Such real-time warnings improve driver reaction time by up to 2X. Thus, irrespective of driving experience of the driver, driver alertness to road events improves and likelihood of dangerous road incidents reduces. Also, following driver monitoring alerts are included: 1. No seat belt 2. Smoking 3. On phone 4. Hard brake 5. Drowsy 6. Asleep 7. Distracted"
+    },
+    {
+      "title": "IDD Temporal Test",
+      "description": "The IDD temporal dataset consists of the temporally nearby frames (+- 15 frames) from the IDD Segmentation and Detection Datasets. The 30 nearby frames for many of the frames in the IDD Segmentation dataset, is provided in the correspondingly named subfolders in the IDD temporal dataset."
+    },
+    {
+      "title": "IDD Segmentation- Part 1",
+      "description": "10,000 images and fine semantic segmentation annotation, released in 2018"
+    },
+    {
+      "title": "IDD Lite",
+      "description": "Subsampled version for IDD for use in resource constrained training/deployment, architecture search"
+    },
+    {
+      "title": "IDD Temporal Validation",
+      "description": "The IDD temporal dataset consists of the temporally nearby frames (+- 15 frames) from the IDD Segmentation and Detection Datasets. The 30 nearby frames for many of the frames in the IDD Segmentation dataset, is provided in the correspondingly named subfolders in the IDD temporal dataset."
+    },
+    {
+      "title": "IDD Temporal Train",
+      "description": "The IDD temporal dataset consists of the temporally nearby frames (+- 15 frames) from the IDD Segmentation and Detection Datasets. The 30 nearby frames for many of the frames in the IDD Segmentation dataset, is provided in the correspondingly named subfolders in the IDD temporal dataset."
+    },
+    {
+      "title": "IDD Multimodal",
+      "description": "IDD Multimodal - Primary, Secondary and Supplemental containing (i) stereo images from front camera at 15 fps, (ii) GPS points at 15 Hz – latitude & longitude, and (iii) 16-channel LIDAR and OBD data"
+    },
+    {
+      "title": "Autorickshaw Detection Dataset",
+      "description": "The problem statement is to develop an algorithm for detecting autorickshaws in images and drawing bounding boxes around them. The challenge is to accurately detect the autorickshaws despite variations in lighting, weather conditions, and other factors that could impact the image quality. The ultimate goal is to create a robust and reliable solution that can be used in real-world scenarios for tasks such as traffic management and surveillance."
+    },
+    {
+      "title": "IDD Detection",
+      "description": "40,000 images with bounding box annotations, released 2018"
+    }
+  ]
+}
