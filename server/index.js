@@ -2,15 +2,18 @@ const express = require("express");
 const app = express();
 const fs = require("fs");
 const cors = require("cors");
+require("dotenv").config();
 app.use(cors());
 // const solr = require("solr-client");
 const solrNode = require("solr-node");
 // const client = solr.createClient();
-const NODE_PORT = 8080;
+const NODE_PORT = process.env.NODE_PORT;
+const CORE_NAME = process.env.CORE_NAME;
+
 const client = new solrNode({
   host: "localhost",
   port: "8983",
-  core: "sample",
+  core: CORE_NAME,
   protocol: "http",
 });
 
@@ -28,6 +31,20 @@ const readJSONFile = (filepath) => {
   const jsonData = fs.readFileSync(filepath, "utf8");
   const jsonObject = JSON.parse(jsonData);
   return jsonObject;
+};
+
+const loadData = async () => {
+  console.log("Loading data");
+  const filepath = "./data.json";
+  const data_obj = readJSONFile(filepath);
+  try {
+    data_obj.data.forEach(async (item) => {
+      const res_obj = await client.update(item);
+    });
+    console.log(`Data loaded successfully!`);
+  } catch (e) {
+    console.log("Error in loading data", e);
+  }
 };
 
 app.get("/search", async (req, res) => {
@@ -56,21 +73,22 @@ app.get("/search", async (req, res) => {
   }
 });
 
-app.get("/load", async (req, res) => {
-  console.log("Loading data");
-  const filepath = "./data.json";
-  const data_obj = readJSONFile(filepath);
-  try {
-    data_obj.data.forEach(async (item) => {
-      const res_obj = await client.update(item);
-    });
-    res.status(200).json(data_obj);
-  } catch (e) {
-    console.log("sad", e);
-    res.status(200).json({ status: "Some error" });
-  }
-});
+// app.get("/load", async (req, res) => {
+//   console.log("Loading data");
+//   const filepath = "./data.json";
+//   const data_obj = readJSONFile(filepath);
+//   try {
+//     data_obj.data.forEach(async (item) => {
+//       const res_obj = await client.update(item);
+//     });
+//     res.status(200).json(data_obj);
+//   } catch (e) {
+//     console.log("sad", e);
+//     res.status(200).json({ status: "Some error" });
+//   }
+// });
 
 app.listen(NODE_PORT, () => {
   console.log(`Server Listenning at port ${NODE_PORT}`);
+  loadData();
 });
